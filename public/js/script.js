@@ -21,6 +21,16 @@ $(document).ready(function(){
         $("#favicon").attr("href", fileUp);
         //change title to title var
         document.title = title;
-        
+        //remove the whole body and create an iframe that goes to the link in the Link variable
+        //remove everything in the body
+        document.getElementById("body1").innerHTML = '';
+        //get screen dimensions
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", link);
+        ifrm.style.width = screenWidth + "px";
+        ifrm.style.height = screenHeight + "px";
+        document.body.appendChild(ifrm);
     });
 });
