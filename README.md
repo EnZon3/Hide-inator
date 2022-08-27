@@ -16,5 +16,9 @@ Using the Hide-Inator, you can make it look like this: <img src="https://i.enzon
 - Start the server by running `node .`
 - Open your web browser and then go to the url https://localhost:8080
 
+# Site
+
+https://hide-inator.vercel.app
+
 ## License
 GNU-GPL v3.0
