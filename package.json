@@ -1,13 +1,10 @@
 {
   "name": "the-hide-inator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Disguise any site",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "author": "",
+  "author": "EnZon3",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
