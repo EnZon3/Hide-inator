@@ -19,7 +19,8 @@ $(document).ready(function(){
 
         //if the enable proxy checkbox is checked then change the link to the proxy url
         if($('#enableProxy').is(':checked')){
-            link = window.location + 'proxy/api/proxy/' + link;
+            link = window.location.href + 'proxy/api/proxy/' + link;
+            console.log(link);
         }
 
         //change favicon to the fileUp link

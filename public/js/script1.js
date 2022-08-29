@@ -12,7 +12,8 @@ $(document).ready(function(){
             return;
         }
         
-        link = window.location + '/api/proxy/' + link;
+        link = window.location.href + '/api/proxy/' + link;
+        console.log(link);
 
         document.getElementById("body1").innerHTML = '';
 
