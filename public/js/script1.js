@@ -23,6 +23,6 @@ $(document).ready(function(){
         ifrm.setAttribute("src", link);
         ifrm.style.width = screenWidth + "px";
         ifrm.style.height = screenHeight + "px";
-        document.body.appendChild(ifrm);
+        $('body').append(ifrm);
     });
 });
