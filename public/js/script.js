@@ -33,10 +33,7 @@ $(document).ready(function(){
         //get screen dimensions
         var screenWidth = window.innerWidth;
         var screenHeight = window.innerHeight;
-        var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", link);
-        ifrm.style.width = screenWidth + "px";
-        ifrm.style.height = screenHeight + "px";
+        let ifrm = `<iframe src="${link}" style="width:${screenWidth}px;height:${screenHeight}px;"></iframe>`;
         $('body').append(ifrm);
     });
 });
