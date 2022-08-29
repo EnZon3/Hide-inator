@@ -17,9 +17,6 @@ $(document).ready(function(){
 
         document.getElementById("body1").innerHTML = '';
 
-        var screenWidth = window.innerWidth;
-        var screenHeight = window.innerHeight;
-        let ifrm = `<iframe src="${link}" style="width:${screenWidth}px;height:${screenHeight}px;"></iframe>`;
-        $('body').append(ifrm);
+        window.location = link;
     });
 });
