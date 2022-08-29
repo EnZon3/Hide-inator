@@ -17,6 +17,11 @@ $(document).ready(function(){
             return;
         }
 
+        //if the enable proxy checkbox is checked then change the link to the proxy url
+        if($('#enableProxy').is(':checked')){
+            link = window.location + 'proxy/api/proxy/' + link;
+        }
+
         //change favicon to the fileUp link
         $("#favicon").attr("href", fileUp);
         //change title to title var
