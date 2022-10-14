@@ -32,13 +32,13 @@ $(document).ready(function(){
         ifrm.setAttribute("src", link);
         ifrm.setAttribute("id", 'if1');
         ifrm.style.width = screenWidth + "px";
-        ifrm.style.height = screenHeight + "px";
+        ifrm.style.height = screenHeight -5 + "px";
         document.body.appendChild(ifrm);
         var ifrm2 = document.createElement("iframe");
         ifrm2.setAttribute("src", link2);
         ifrm2.setAttribute("id", 'if2');
         ifrm2.style.width = screenWidth + "px";
-        ifrm2.style.height = screenHeight + "px";
+        ifrm2.style.height = screenHeight -5 + "px";
         document.body.appendChild(ifrm2);
     });
 });
