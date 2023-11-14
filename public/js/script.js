@@ -38,7 +38,7 @@ $(document).ready(function(){
         let ifrm = `<iframe src="${link}" id="if1" style="width:${screenWidth}px;height:${screenHeight - 5}px;"></iframe>`;
         $('body').append(ifrm);
         let ifrm2 = `<iframe src="${link2}" id="if2" style="width:${screenWidth}px;height:${screenHeight - 5}px;"></iframe>`;
-        $('body').append(ifrm);
+        $('body').append(ifrm2);
     });
 });
 
