@@ -18,6 +18,12 @@ $(document).ready(function(){
             return;
         }
 
+        //if the enable proxy checkbox is checked then change the link to the proxy url
+        if($('#enableProxy').is(':checked')){
+            link = window.location.href + 'proxy/api/proxy/' + link;
+            console.log(link);
+        }
+
         //change favicon to the fileUp link
         $("#favicon").attr("href", fileUp);
         //change title to title var
@@ -28,18 +34,11 @@ $(document).ready(function(){
         //get screen dimensions
         var screenWidth = window.innerWidth;
         var screenHeight = window.innerHeight;
-        var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", link);
-        ifrm.setAttribute("id", 'if1');
-        ifrm.style.width = screenWidth + "px";
-        ifrm.style.height = screenHeight -5 + "px";
-        document.body.appendChild(ifrm);
-        var ifrm2 = document.createElement("iframe");
-        ifrm2.setAttribute("src", link2);
-        ifrm2.setAttribute("id", 'if2');
-        ifrm2.style.width = screenWidth + "px";
-        ifrm2.style.height = screenHeight -5 + "px";
-        document.body.appendChild(ifrm2);
+        //append iframes
+        let ifrm = `<iframe src="${link}" id="if1" style="width:${screenWidth}px;height:${screenHeight - 5}px;"></iframe>`;
+        $('body').append(ifrm);
+        let ifrm2 = `<iframe src="${link2}" id="if2" style="width:${screenWidth}px;height:${screenHeight - 5}px;"></iframe>`;
+        $('body').append(ifrm);
     });
 });
 
